@@ -7,8 +7,8 @@ Whoever rolls the higher number wins the round 🏆
 
 ---
 
-## 🚀 Live Demo
-👉 # EKLENECEK
+## 🔗 **Live Demo:**  
+https://dice-duel-umut.netlify.app/
 
 ---
 
