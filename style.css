@@ -150,3 +150,62 @@ main {
 .hidden {
   display: none;
 }
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .score-board {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .vs {
+    display: none;
+  }
+
+  .result-area {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dice-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dice-img,
+  .dice-placeholder-player,
+  .dice-placeholder-computer {
+    width: 90px;
+    height: 90px;
+  }
+
+  .result-text-container {
+    font-size: 1.2rem;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
