@@ -210,17 +210,46 @@ main {
   }
 }
 @media (max-width: 768px) {
-  .score-board {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  .game-container {
+    display: grid;
+    grid-template-areas:
+      'player'
+      'result'
+      'computer'
+      'controls';
+    gap: 1.5rem;
   }
 
-  .score-board span {
+  .score-board {
+    display: contents; /* çok kritik */
+  }
+
+  .score-board span:first-child {
+    grid-area: player;
+    font-size: 1.2rem;
+  }
+
+  .score-board span:last-child {
+    grid-area: computer;
     font-size: 1.2rem;
   }
 
   .vs {
     display: none;
+  }
+
+  .result-area {
+    grid-area: result;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .controls {
+    grid-area: controls;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
