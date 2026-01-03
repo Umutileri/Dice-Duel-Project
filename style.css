@@ -209,3 +209,18 @@ main {
     padding: 12px;
   }
 }
+@media (max-width: 768px) {
+  .score-board {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .score-board span {
+    font-size: 1.2rem;
+  }
+
+  .vs {
+    display: none;
+  }
+}
