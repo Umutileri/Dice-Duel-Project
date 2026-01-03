@@ -20,6 +20,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .winner {
   background-color: var(--card-win-background);
 }
@@ -30,12 +37,14 @@
   background-color: var(--card-draw-background);
 }
 main {
-  background-color: var(--background-color);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
   font-family: 'Work Sans', sans-serif;
+  padding: 10px;
 }
 .title {
   color: var(--title-color);
