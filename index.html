@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="game-container">
+        <div class="header">
+          <h1 class="title">Dice Duel</h1>
+          <p class="sub-title">
+            Player and Computer roll the dice. Highest roll wins.
+          </p>
+        </div>
+
+        <div class="score-board">
+          <span>🎮 Player: <span id="score-0">0</span></span>
+          <span class="vs">vs</span>
+          <span>💻 Computer: <span id="score-1">0</span></span>
+        </div>
+
+        <div class="result-area">
+          <div class="dice-box player-box player-dice">
+            <div class="dice-placeholder-player">?</div>
+            <img
+              src="dice-1.png"
+              id="dice-player"
+              class="dice-img"
+              alt="dice"
+            />
+          </div>
+
+          <div class="result-text-container">
+            <p id="result-icon">🎲</p>
+            <p id="result-text">Roll to Start!</p>
+          </div>
+
+          <div class="dice-box computer-box computer-dice">
+            <div class="dice-placeholder-computer">?</div>
+            <img
+              src="dice-1.png"
+              id="dice-computer"
+              class="dice-img"
+              alt="dice"
+            />
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-roll">Roll Dice</button>
+          <button class="btn btn-reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

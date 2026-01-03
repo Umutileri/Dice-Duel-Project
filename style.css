@@ -1,0 +1,152 @@
+:root {
+  --background-color: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --title-color: #6366f1;
+  --subtitle-color: #cbd5e1;
+  --card-background: #1e293b;
+  --card-border: #334155;
+  --button-primary: #6366f1;
+  --button-primary-hover: #4f46e5;
+  --button-secondary: #334155;
+  --button-secondary-hover: #475569;
+  --card-win-background: #22c55e;
+  --card-lose-background: #f43f5e;
+  --card-draw-background: #facc15;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.winner {
+  background-color: var(--card-win-background);
+}
+.loser {
+  background-color: var(--card-lose-background);
+}
+.draw {
+  background-color: var(--card-draw-background);
+}
+main {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+}
+.title {
+  color: var(--title-color);
+  text-align: center;
+  font-size: 3rem;
+}
+.sub-title {
+  color: var(--subtitle-color);
+  text-align: center;
+}
+.game-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Skor tablosu */
+.score-board {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 8.5rem;
+}
+
+.vs {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+/* Ortadaki sonuç alanı (Görseldeki koyu kutu) */
+.result-area {
+  background-color: var(--card-background);
+  width: 600px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0 20px;
+  transition: background 0.6s ease-in-out;
+}
+
+.dice-img {
+  width: 80px; /* Zarın boyutu */
+  height: 80px;
+  object-fit: contain;
+}
+
+.result-text-container {
+  text-align: center;
+  min-width: 150px;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+}
+
+/* Butonları alt alta dizmek için */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-roll {
+  background-color: var(--button-primary);
+  color: white;
+}
+.btn-reset {
+  background-color: var(--button-secondary);
+  color: var(--text-secondary);
+}
+.btn-roll:hover {
+  background-color: var(--button-primary-hover);
+}
+.btn-reset:hover {
+  background-color: var(--button-secondary-hover);
+  color: var(--text-primary);
+}
+.text-win {
+  color: var(--card-win-background);
+}
+.text-lose {
+  color: var(--card-lose-background);
+}
+.text-draw {
+  color: var(--card-draw-background);
+}
+.dice-placeholder-player,
+.dice-placeholder-computer {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: #1e293b;
+  color: #94a3b8;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
